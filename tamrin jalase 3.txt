@@ -1,0 +1,104 @@
+short answer questions:
+
+tamrin 1 :
+
+a) i= 5 j= 5 k= 7
+
+b)i= 3 j= 5 k= 5
+
+c)i= 7 j= 3 k= 7 
+
+d)i= 5 j= 3 k= 3
+
+e)i= 5 j= 3 k= 5
+
+f)i= 7 j= 7 k= 3
+
+______________________________________________________________________________________________________________________________
+
+tamrin 2 :
+
+a)wow3
+
+b)whoa21
+
+c)6
+
+d)27
+
+e)wow-5
+
+_____________________________________________________________________________________________________________________________
+
+programming questions:
+
+tamrin 1 :
+
+
+income = int(input('please enter your income :')) 
+if income<1000 :
+  income=income-income*0/100
+if 1000<income<=2500 :
+  income=income-income*10/100
+if 2500<income<=4000 :
+  income=income-income*15/100
+if 4000<income<=6000 :
+  income=income-income*20/100
+if income>8000 :
+  income=income-income*30/100  
+print(income)
+
+
+***************************************************
+
+
+please enter your income :4250
+3400.0
+
+
+
+
+
+_________________________________________________________________________________________________________________________
+
+
+tamrin 2 :
+
+a = int(input('plz enter a :'))
+b = int(input('plz enter b :'))
+c = int(input('plz enter c :'))
+if a*a+b*b==c*c :
+    print('the triangular is right')
+else:
+    print('triangular is not right')
+
+ ************************************
+
+plz enter a :2
+plz enter b :3
+plz enter c :4
+triangular is not right
+    
+
+
+__________________________________________________________________________________________________________________________
+
+
+tamrin 3 :
+ 
+a,b,c,d,e = input('enter numbers:').split()
+
+if a==b or a==c or a==d or a==e or b==c or b==d or b==e or c==d or c==e or d==e : 
+ print ('duplicate')
+else :
+  print('all unique') 
+
+**************************************
+
+enter numbers:1 3 4 3 5
+duplicate
+
+
+
+
+
