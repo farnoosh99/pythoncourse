@@ -1,0 +1,124 @@
+
+
+tamrin 1 : mohasebe sinx ba serie teilor
+
+
+print("Enter the value of x in degree: ")
+xdeg=float(input())
+print("Enter the number of terms: ")
+n=int(input())
+xrad=(xdeg*3.14)/180
+s=xrad
+term=s
+for i in range(2, n+1):
+    term*=-(xrad*xrad)/((2*i-1)*(2*i-2))
+    s+=term
+print("sin(",xdeg,")= ",s)
+
+
+___________________________________________________________________________________________________
+
+
+tamrin 2 : bmm
+
+
+def bmm(x,y):
+	if (x == 0):
+		return y
+	if (y == 0):
+		return x
+	if (x == y):
+		return x
+	if (x > y):
+		return bmm(x-y, y)
+	return bmm(x, y-x)
+print("please enter two numbers: ")
+x=int(input())
+y=int(input())
+print(bmm(x,y))
+
+
+
+_____________________________________________________________________________________________________
+
+
+tamrin 3 : armestrang
+
+
+for x in range(1, 10000):
+    s=0
+    xx=x
+    t=0
+    while(xx>0):
+        xx//=10
+        t+=1
+    xx=x
+    while(xx>0):
+        s+= (xx%10)**t
+        xx//=10
+    if(s==x):
+        print(x)
+
+
+_______________________________________________________________________________________________________
+
+
+tamrin 4 : newton rafson
+
+
+def fx(x):
+    return ((x**3)-(x**2) + 2 )
+def fprimex(x):
+    return( (3*(x**2))-(2*x))
+xn=1
+for i in range(10):
+    xnn=xn-((fx(xn))/(fprimex(xn)))
+    xn=xnn
+print(xn)
+
+
+________________________________________________________________________________________________________
+
+
+tamrin 5 : jolio sezar
+
+
+
+print("please enter your text: ")
+text =input()
+print("please enter the number: ")
+s=int(input())
+encrypted = ""
+for i in range(len(text)):
+	char = text[i]
+	if (char.isupper()):
+		encrypted += chr((ord(char) + s-65) % 26 + 65)
+	else:
+		encrypted += chr((ord(char) + s - 97) % 26 + 97)
+print(encrypted)
+  
+
+
+_________________________________________________________________________________________________________
+
+
+tamrin 6 : tamrin 34 safhe 155
+
+
+s=0
+mx=0
+mn=0
+t=0
+while True:
+    x=float(input())
+    if(x<0):
+        break
+    s+=x
+    if x>mx:
+        mx=x
+    if x<mn:
+        mn=x
+    t+=1
+avg=s/t
+print("sum: ", s, " average: ", avg," maximuem: ", mx, " minimuem: ", mn)
+
