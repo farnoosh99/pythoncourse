@@ -1,0 +1,14 @@
+HANOI TOWER
+
+
+def hanoi(n,frompole,withpole,topole):
+    if n==1:
+        movedisk(frompole,topole)
+    else:
+        hanoi(n-1,frompole,topole,withpole)
+        movedisk(frompole,topole)
+        hanoi(n-1,withpole,frompole,topole)
+def movedisk(fp,tp):
+    print("moving disk from",fp,"to",tp)
+    
+hanoi(10,"A","B","C")
